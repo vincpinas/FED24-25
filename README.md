@@ -119,8 +119,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | idelene        | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | positionering  tov  parent | en dit             | en ik dit    | en dan ik dat    |
-  | html screenreaderproof? | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
+  | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
