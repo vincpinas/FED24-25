@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -140,7 +140,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
