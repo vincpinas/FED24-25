@@ -5,9 +5,6 @@
   box-sizing:border-box;  
 }
 
-button, summary {
-	cursor: pointer;
-}
 
 
 
@@ -31,9 +28,4 @@ button, summary {
 /****************/
 
 /* jouw code */
-
-body {
-  color:var(--color-text);
-  background-color:var(--color-background);
-}
 
