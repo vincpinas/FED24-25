@@ -1,28 +1,15 @@
 # Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+---
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
-
-## Jij
-
+## Ik
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
-  ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  ###
 
-  #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
-
-  #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  |Auteur✍🏽|Starniveau🏔️|Focus🤔|
+  |---|---|---|
+  |Vincent Pinas|Zwart+|Helemaal responsive|
  
 </details>
 
@@ -36,15 +23,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  voor deze opdracht ga ik een aantal pagina's van de [**Moooi website**](https://www.moooi.com/) namaken.
+  
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  [Home screen](https://www.moooi.com/)
+
+  <img src="readme-images/Screenshot_1.png" width="200px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  [About us screen](https://www.moooi.com/)
+
+  <img src="readme-images/Screenshot_2.png" width="200px" alt="omschrijving van de pagina">
  
 </details>
 
