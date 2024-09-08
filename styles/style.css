@@ -1,31 +1,181 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+body {
+  line-height: 0;
 }
 
+ol,
+ul {
+  list-style: none;
+}
 
+blockquote,
+q {
+  quotes: none;
+}
 
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
-/* jouw code */
+body, html {
+  height: 100%;
+}
 
+body {
+  color: var(--text);
+  background: var(--background);
+}
+body a,
+body button,
+body input[type=submit] {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text);
+}
+body button,
+body a,
+body input,
+body select {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 767px) {
+  body button,
+  body a,
+  body input,
+  body select {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+body h1 {
+  font-size: 42px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-style: normal;
+  line-height: 48px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  body h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+body h2 {
+  font-size: 36px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-style: normal;
+  line-height: 44px;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  body h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+body h3 {
+  font-size: 26px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  body h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+body h4 {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 28px;
+  margin-bottom: 0.15rem;
+}
+@media screen and (max-width: 767px) {
+  body h4 {
+    font-size: 12px;
+    line-height: 28px;
+  }
+}
+body h5 {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  body h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+body p {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 28px;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+  body p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+body label {
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (max-width: 767px) {
+  body label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

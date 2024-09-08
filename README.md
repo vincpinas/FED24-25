@@ -23,18 +23,20 @@
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  voor deze opdracht ga ik een aantal pagina's van de [**Moooi website**](https://www.moooi.com/) namaken.
+  voor deze opdracht ga ik een aantal pagina's van de [**Nasa website**](https://www.nasa.gov/) namaken.
   
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  [Home screen](https://www.moooi.com/)
+  [Home screen](https://www.nasa.gov/)
 
-  <img src="readme-images/Screenshot_1.png" width="200px" alt="omschrijving van de pagina">
+  <img src="readme-images/Screenshot1.png" width="200px" alt="omschrijving van de pagina">
+  <img src="readme-images/Screenshot2.png" width="200px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  [About us screen](https://www.moooi.com/)
+  [Missions screen](https://www.nasa.gov/missions/)
 
-  <img src="readme-images/Screenshot_2.png" width="200px" alt="omschrijving van de pagina">
+  <img src="readme-images/Screenshot3.png" width="200px" alt="omschrijving van de pagina">
+  <img src="readme-images/Screenshot4.png" width="200px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -48,6 +50,14 @@
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  - Heel veel errors in HTML validator
+  - Niet elke knop is groot genoeg voor op mobiel
+  - Er worden heading levels geskipped en er is helemaal geen h1
+  - Er is een auto-play video, maar zonder flitsende beelden of geluid en met de optie om hem te pauzeren.
+  - links die naar andere sites leiden lijken op normale links
+  - Geen light of dark mode alleen normale kleuren
+  - Geen prefers reduced motion query, maar ook vrijwel geen animaties gevonden.
+  
 </details>
 
 
