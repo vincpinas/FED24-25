@@ -55,8 +55,10 @@
   - Er worden heading levels geskipped en er is helemaal geen h1
   - Er is een auto-play video, maar zonder flitsende beelden of geluid en met de optie om hem te pauzeren.
   - links die naar andere sites leiden lijken op normale links
+  - Geen hoge contrast modus, in iedergeval niet gemerkt
   - Geen light of dark mode alleen normale kleuren
   - Geen prefers reduced motion query, maar ook vrijwel geen animaties gevonden.
+  - Icoontjes over sommige afbeeldingen zijn niet heel goed te zien
   
 </details>
 
