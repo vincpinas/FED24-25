@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+
+  a,
+  button,
+  input[type="submit"] {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text);
+  }
+
+  a {
+    display: block;
+    font-weight: bold;
+  }
+}
+
+

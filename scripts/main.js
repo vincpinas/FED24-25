@@ -1,4 +1,4 @@
-import Navigtion from "./navigation.js";
+import Navigation from "./navigation.js";
 
 // JavaScript Document
 console.log("hi");
