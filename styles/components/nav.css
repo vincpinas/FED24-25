@@ -1,0 +1,21 @@
+body nav:nth-of-type(1) {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: var(--background-inverse);
+
+    button[role="search"] {
+        background: none;
+        border: none;
+        
+    }
+
+    & > img {
+        width: 3.75rem;
+    }
+
+    button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

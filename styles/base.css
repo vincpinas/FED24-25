@@ -1,13 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 body,
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   color: var(--text);
   background: var(--background);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  button,
+  a,
+  input {
+    font-family: var(--font-primary);
+  }
 
   a,
   button,
@@ -18,9 +31,46 @@ body {
   }
 
   a {
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: bold;
+
+    & > img[alt=""] {
+      margin-left: 0.5rem;
+      rotate: -45deg;
+    }
+  }
+
+  h1 {
+    font-size: var(--s-font-size--h1);
+    line-height: var(--s-line-height--h1);
+  }
+
+  h2 {
+    font-size: var(--s-font-size--h2);
+    line-height: var(--s-line-height--h2);
+  }
+
+  h3 {
+    font-size: var(--s-font-size--h3);
+    line-height: var(--s-line-height--h3);
+  }
+
+  h4 {
+    font-size: var(--s-font-size--h4);
+    line-height: var(--s-line-height--h4);
+  }
+
+  p {
+    font-size: var(--s-font-size--paragraph);
+    line-height: var(--s-line-height--paragraph);
+  }
+
+  a {
+    line-height: var(--s-line-height--paragraph);
   }
 }
 
-
+/* Desktop font sizes */
+@media screen and (min-width: 992px) {
+}
