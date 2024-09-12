@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="styles/base.css" />
 
     <link rel="stylesheet" href="styles/components/nav.css" />
-    <link rel="stylesheet" href="styles/components/footer.css" />
 
     <link rel="stylesheet" href="styles/pages/home.css" />
 
@@ -23,13 +22,20 @@
 	<!-- Navigation -->
     <header>
       <nav>
-        <button type="button">Explore</button>
+        <button type="button" id="explore-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <img src="images/favicon.svg" alt="Nasa logo" />
         <!-- <button type="button" aria-label="Press enter to open news & events menu">News & Events</button>
         <button type="button" aria-label="Press enter to open multimedia menu">Multimedia</button>
         <a href="https://plus.nasa.gov/">NASA+ <span>LIVE</span></a>
         <input type="text" name="search" id="search" placeholder="Search..." /> -->
         <button type="button" role="search"><img src="images/search.svg" alt="search"></button>
+      </nav>
+      <nav aria-label="submenu">
+
       </nav>
     </header>
 
@@ -40,12 +46,14 @@
           <button type="button">d</button>
           <button type="button">d</button>
         </span>
+        <div>
         <h1>NASA's Europa Clipper</h1>
         <p>
           Earth's first mission to conduct detailed reconnaissance of Jupiter's
           moon, Europa.
         </p>
         <a href="#">The Mission</a>
+      </div>
         <ul>
           <li>
             <h3>Nasa Astronaut</h3>
@@ -65,8 +73,8 @@
             <a href="#">Expedition 71 <img src="images/link.svg" alt="" /></a>
           </li>
         </ul>
-        <div></div>
-        <div>
+        <div class="video-wrapper">
+          <div></div>
           <video
             alt
             src="images/plume-flyby.mp4"
@@ -83,110 +91,70 @@
           <h2 id="featured-news-heading">Featured News</h2>
           <h3>
             <a href="#" aria-label="More NASA News"
-              >More NASA News img <img src="images/link.svg" alt=""
+              >More NASA News <img src="images/link.svg" alt=""
             /></a>
           </h3>
         </div>
         <div class="featured-news-grid">
 
-          <article class="large-article">
-            <a href="#">
-              <img
-                src=""
-                alt="NASA Astronauts to Discuss Mission from Space Station"
-              />
-              <div class="article-content">
+          <a href="#">
+            <article class="large-article">
+              <div>
                 <header>
                   <span class="article-meta">
-                    <img src="" alt="" />
-                    NEWS RELEASE
+                    <img src="images/news-white.svg" alt="" />
+                    <p>NEWS RELEASE</p>
                   </span>
                 </header>
                 <p>2 MIN READ</p>
                 <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
               </div>
-            </a>
-          </article>
-
-          <article class="small-article">
-            <a href="#">
-              <img src="" alt="" />
+            </article>
+            <img
+              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+              alt="NASA Astronauts to Discuss Mission from Space Station"
+            />
+          </a>
+          <a href="#">
+            <article class="large-article">
               <div>
+                <header>
+                  <span class="article-meta">
+                    <img src="images/news-white.svg" alt="" />
+                    <p>NEWS RELEASE</p>
+                  </span>
+                </header>
                 <p>2 MIN READ</p>
-                <h5>
-                  NASA Scientific Balloon Takes Flight With Student-Built
-                  Payloads
-                </h5>
-                <span class="article-meta">
-                  <img src="" alt="" />
-                  NEWS RELEASE
-                </span>
+                <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
               </div>
-            </a>
-          </article>
+            </article>
+            <img
+              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+              alt="NASA Astronauts to Discuss Mission from Space Station"
+            />
+          </a>
+          <a href="#">
+            <article class="large-article">
+              <div>
+                <header>
+                  <span class="article-meta">
+                    <img src="images/news-white.svg" alt="" />
+                    <p>NEWS RELEASE</p>
+                  </span>
+                </header>
+                <p>2 MIN READ</p>
+                <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
+              </div>
+            </article>
+            <img
+              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+              alt="NASA Astronauts to Discuss Mission from Space Station"
+            />
+          </a>
 
         </div>
       </section>
 
-	  <!-- Observe the moon event section -->
-	  <section>
-		<h2>Observe the moon</h2>
-		<p>International Observe the Moon Night on Saturday, Sept. 14, is a time to come together with fellow Moon enthusiasts and curious people worldwide. Everyone on Earth is invited to learn about lunar science and exploration, take part in celestial observations, and honor cultural and personal connections to the Moon.</p>
-		<h3><a href="">Ways to participate <img src="images/link.svg" alt=""/></a></h3>
-	  </section>
-
-	  <!-- Image of the day section -->
-	  <section>
-		<p></p>
-		<h2></h2>
-		<img src="" alt="">
-		<a href=""></a>
-		
-		<article>
-			<h3></h3>
-			<p></p>
-			<a href=""></a>
-		</article>
-	  </section>
-
-	  <!-- More images section -->
-	  <section>
-		<h2></h2>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		<p></p>
-		<p></p>
-	  </section>
-
-	  <!-- Earth information center section -->
-	  <section>
-		<h2></h2>
-		<p></p>
-		<a href=""></a>
-	  </section>
-
-	  <!-- More nasa topics section -->
-	   <section>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	   </section>
-
-	   <!-- Mail list section -->
-		<section>
-			<h2></h2>
-			<p></p>
-			<a href=""></a>
-		</section>
-    </main>
-	<footer>
-		
-	</footer>
     <script src="scripts/main.js" type="module"></script>
   </body>
 </html>

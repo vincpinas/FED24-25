@@ -1,12 +1,15 @@
 class Navigation {
     constructor() {
-        this.switch = document.querySelector("nav:nth-of-type(1) > button");
+        this.switch = document.querySelector("#explore-button");
+        this.submenu = document.querySelector("nav[aria-label^='sub']")
 
         this.init()
     }
 
     init() {
         this.activate_menu();
+
+        console.log(this.submenu)
     }
 
     activate_menu() {

@@ -1,17 +1,27 @@
 :root {
-  /* Colors */
+/*
+COLORS
+------------------------------------------------------------------
+*/
   --background: #fff;
   --background-inverse: #000;
   --text: #000;
   --text-inverse: #fff;
+  --special: #d83933;
 
-  /* Fonts */
+/*
+FONTS
+------------------------------------------------------------------
+*/
   --font-primary: "Public Sans";
   --font-secondary: "DM Mono";
 
-  /* DESKTOP: Font sizes / line-heights */
-  --font-size--h1: 2.625rem;
-  --line-height--h1: 3rem;
+/*
+DESKTOP FONT SIZES / LINE HEIGHTS
+------------------------------------------------------------------
+*/
+  --font-size--h1: 4.5rem;
+  --line-height--h1: 4.7rem;
 
   --font-size--h2: 2.25rem;
   --line-height--h2: 2.75rem;
@@ -19,13 +29,16 @@
   --font-size--h3: 1.625rem;
   --line-height--h3: 1.75rem;
 
-  --font-size--h4: 1.375rem;
+  --font-size--h4: 1.38rem;
   --line-height--h4: 1.75rem;
 
   --font-size--paragraph: 1rem;
   --line-height--paragraph: 1.75rem;
 
-  /* MOBILE: Font sizes / line-heights */
+/*
+MOBILE FONT SIZES / LINE HEIGHTS
+------------------------------------------------------------------
+*/
   --s-font-size--h1: 2.2rem;
   --s-line-height--h1: 2.3rem;
 
@@ -45,20 +58,16 @@
   --s-line-height--label: 1.1rem;
 }
 
-/* EXAMPLE MEDIA QUERIES
-
-TABLET:
+/*
+EXAMPLE MEDIA QUERIES
+------------------------------------------------------------------
+*/
+/* MOBILE: */
 @media screen and (min-width: 786px) {
 
-    html {
-        background: blue;
-    }
 }
 
-DESKTOP:
+/* DESKTOP: */
 @media screen and (min-width: 992px) {
-    html {
-        background: red;
-    }
+
 }
-*/

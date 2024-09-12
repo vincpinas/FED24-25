@@ -71,6 +71,73 @@ body {
   }
 }
 
-/* Desktop font sizes */
-@media screen and (min-width: 992px) {
+/*
+DESKTOP FONT SIZES MEDIA QUERY
+------------------------------------------------------------------
+*/
+@media screen and (min-width: 786px) {
+  body {
+    h1 {
+      font-size: var(--font-size--h1);
+      line-height: var(--line-height--h1);
+    }
+  
+    h2 {
+      font-size: var(--font-size--h2);
+      line-height: var(--line-height--h2);
+    }
+  
+    h3 {
+      font-size: var(--font-size--h3);
+      line-height: var(--line-height--h3);
+    }
+  
+    h4 {
+      font-size: var(--font-size--h4);
+      line-height: var(--line-height--h4);
+    }
+  
+    p {
+      font-size: var(--font-size--paragraph);
+      line-height: var(--line-height--paragraph);
+    }
+  
+    a {
+      line-height: var(--line-height--paragraph);
+    }
+  }
+}
+
+
+
+/*
+RE-USABLE CLASSES
+------------------------------------------------------------------
+*/
+.video-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+
+  div:first-of-type {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: none;
+    background: linear-gradient(65.99deg, var(--background-inverse) 0, transparent 99.04%);
+  }
+  
+  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: auto;
+  }
 }
