@@ -3,11 +3,12 @@
 COLORS
 ------------------------------------------------------------------
 */
-  --background: #fff;
-  --background-inverse: #000;
-  --text: #000;
-  --text-inverse: #fff;
-  --special: #d83933;
+  --background: oklch(100% 0 0);
+  --background-inverse: oklch(0% 0 0);
+  --text: oklch(0% 0 0);
+  --text-inverse: oklch(100% 0 0);
+  --special: oklch(55.66% 0.21 27.56);
+  --text-label: oklch(0% 0 0 / 0.64);
 
 /*
 FONTS

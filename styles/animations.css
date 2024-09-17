@@ -1,0 +1,9 @@
+@keyframes adjust-position {
+	from {
+		transform: translateX(calc(-100% + 110vw));
+	}
+
+	to {
+		transform: translateX(calc(100% - 110vw));
+	}
+}

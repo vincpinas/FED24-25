@@ -93,9 +93,9 @@
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Vincent        | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  |   | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -103,10 +103,10 @@
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Skip to content knop toevoegen voor screenreaders
+  - Je kan verder ingaan op accessibility met bijv. aria-labels als er extra tijd voor over is
+  - Er is niet echt een minimaal of maximaal voor functionaliteiten toevoegen, gewoon zoveel als je kan.
+  - 
 
 </details>
 
