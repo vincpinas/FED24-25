@@ -1,6 +1,7 @@
 import Navigation from "./navigation.js";
 
-// JavaScript Document
-console.log("hi");
+const nav = new Navigation();
 
-new Navigation();
+
+
+nav.init();

@@ -1,22 +1,30 @@
 class Navigation {
-    constructor() {
-        this.switch = document.querySelector("#explore-button");
-        this.submenu = document.querySelector("nav[aria-label^='sub']")
+	constructor() {
+		this.header = document.querySelector("header:has(#explore-button)")
+		this.switch = document.querySelector("#explore-button");
+		this.menu = document.querySelector("nav[aria-label^='sub']");
 
-        this.init()
-    }
+		this.current_tab = null;
+	}
 
-    init() {
-        this.activate_menu();
+	init() {
+		this.set_open_event();
+	}
 
-        console.log(this.submenu)
-    }
+	// Functions
+	// ------------------------------------------------------------------
+  open_tab() {
+    
+  }
 
-    activate_menu() {
-        this.switch.addEventListener("click", (e) => {
-            e.target.parentElement.classList.toggle("active");
-        })
-    }
+
+	// Events
+	// ------------------------------------------------------------------
+	set_open_event() {
+		this.switch.addEventListener("click", (e) => {
+			this.header.classList.toggle("active");
+		});
+	}
 }
 
 export default Navigation;

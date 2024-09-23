@@ -9,6 +9,7 @@ COLORS
   --text-inverse: oklch(100% 0 0);
   --special: oklch(55.66% 0.21 27.56);
   --text-label: oklch(0% 0 0 / 0.64);
+  --gray-accent: rgb(128, 128, 128, 0.4);
 
 /*
 FONTS
@@ -33,6 +34,9 @@ DESKTOP FONT SIZES / LINE HEIGHTS
   --font-size--h4: 1.38rem;
   --line-height--h4: 1.75rem;
 
+  --font-size--nav: 1.1rem;
+  --line-height--nav: 1rem;
+
   --font-size--paragraph: 1rem;
   --line-height--paragraph: 1.75rem;
 
@@ -51,6 +55,9 @@ MOBILE FONT SIZES / LINE HEIGHTS
 
   --s-font-size--h4: 1.125rem;
   --s-line-height--h4: 1.25rem;
+
+  --s-font-size--nav: 1rem;
+  --s-line-height--nav: .9rem;
 
   --s-font-size--paragraph: .9rem;
   --s-line-height--paragraph: 1.5rem;
