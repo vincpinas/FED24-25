@@ -11,23 +11,21 @@ class Navigation {
 		this.register_menu_buttons();
 	}
 
-	// Functions
-	// ------------------------------------------------------------------
-
 	// Events
 	// ------------------------------------------------------------------
 	set_open_event() {
 		html.switch.addEventListener("click", (e) => {
-			if(html.header.classList.contains("active")) {
+			if (html.header.classList.contains("active")) {
 				this.tabs.close();
 			}
 
 			html.header.classList.toggle("active");
 		});
-	} 
+	}
 
 	register_menu_buttons() {
-		html.menu_buttons.forEach((button) => {
+		html.menu_buttons.forEach((button, i) => {
+			if(i === 0) return;
 			button.addEventListener("click", (e) => this.tabs.open(e.target));
 		});
 	}

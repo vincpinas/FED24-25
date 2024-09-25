@@ -1,69 +1,69 @@
 :root {
-/*
+	/*
 COLORS
 ------------------------------------------------------------------
 */
-  --background: oklch(100% 0 0);
-  --background-inverse: oklch(0% 0 0);
-  --text: oklch(0% 0 0);
-  --text-inverse: oklch(100% 0 0);
-  --special: oklch(55.66% 0.21 27.56);
-  --text-label: oklch(0% 0 0 / 0.64);
-  --gray-accent: rgb(128, 128, 128, 0.4);
+	--background: oklch(100% 0 0);
+	--background-inverse: oklch(0% 0 0);
+	--text: oklch(0% 0 0);
+	--text-inverse: oklch(100% 0 0);
+	--special: oklch(55.66% 0.21 27.56);
+	--text-label: oklch(0% 0 0 / 0.64);
+	--gray-accent: rgb(128, 128, 128, 0.4);
 
-/*
+	/*
 FONTS
 ------------------------------------------------------------------
 */
-  --font-primary: "Public Sans";
-  --font-secondary: "DM Mono";
+	--font-primary: "Public Sans";
+	--font-secondary: "DM Mono";
 
-/*
+	/*
 DESKTOP FONT SIZES / LINE HEIGHTS
 ------------------------------------------------------------------
 */
-  --font-size--h1: 4.5rem;
-  --line-height--h1: 4.7rem;
+	--font-size--h1: 4.5rem;
+	--line-height--h1: 4.7rem;
 
-  --font-size--h2: 2.25rem;
-  --line-height--h2: 2.75rem;
+	--font-size--h2: 2.25rem;
+	--line-height--h2: 2.75rem;
 
-  --font-size--h3: 1.625rem;
-  --line-height--h3: 1.75rem;
+	--font-size--h3: 1.625rem;
+	--line-height--h3: 1.75rem;
 
-  --font-size--h4: 1.38rem;
-  --line-height--h4: 1.75rem;
+	--font-size--h4: 1.38rem;
+	--line-height--h4: 1.75rem;
 
-  --font-size--nav: 1.1rem;
-  --line-height--nav: 1rem;
+	--font-size--nav: 1.1rem;
+	--line-height--nav: 1rem;
 
-  --font-size--paragraph: 1rem;
-  --line-height--paragraph: 1.75rem;
+	--font-size--paragraph: 1rem;
+	--line-height--paragraph: 1.75rem;
 
-/*
+	/*
 MOBILE FONT SIZES / LINE HEIGHTS
 ------------------------------------------------------------------
 */
-  --s-font-size--h1: 2.2rem;
-  --s-line-height--h1: 2.3rem;
+	--s-font-size--h1: 2.2rem;
+	--s-line-height--h1: 2.3rem;
 
-  --s-font-size--h2: 2.1rem;
-  --s-line-height--h2: 2.2rem;
+	--s-font-size--h2: 2.1rem;
+	--s-line-height--h2: 2.2rem;
 
-  --s-font-size--h3: 1.4rem;
-  --s-line-height--h3: 1.5rem;
+	--s-font-size--h3: 1.4rem;
+	--s-line-height--h3: 1.5rem;
 
-  --s-font-size--h4: 1.125rem;
-  --s-line-height--h4: 1.25rem;
+	--s-font-size--h4: 1.125rem;
+	--s-line-height--h4: 1.25rem;
 
-  --s-font-size--nav: 1rem;
-  --s-line-height--nav: .9rem;
+	--s-font-size--nav: 1rem;
+	--s-line-height--nav: 0.9rem;
 
-  --s-font-size--paragraph: .9rem;
-  --s-line-height--paragraph: 1.5rem;
+	--s-font-size--paragraph: 0.9rem;
+	--s-line-height--paragraph: 1.5rem;
 
-  --s-font-size--label: .7rem;
-  --s-line-height--label: 1.1rem;
+	--s-font-size--label: 0.7rem;
+	--s-line-height--label: 1.1rem;
 }
 
 /*
@@ -72,10 +72,8 @@ EXAMPLE MEDIA QUERIES
 */
 /* MOBILE: */
 @media screen and (min-width: 786px) {
-
 }
 
 /* DESKTOP: */
 @media screen and (min-width: 992px) {
-
 }
