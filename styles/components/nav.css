@@ -1,7 +1,12 @@
 header:has(#explore-button) {
 	display: flex;
 	flex-direction: column;
-	position: relative;
+}
+
+header:has(#explore-button).active {
+	width: 100vw;
+	position: fixed;
+	z-index: 2;
 }
 
 /*
@@ -52,6 +57,39 @@ header:has(#explore-button) nav[aria-label^="sub"] {
     border: 0.5px solid var(--gray-accent);
     margin: 2rem 0;
   }
+
+  section ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	li button {
+		display: flex;
+		padding: 0.3rem 0;
+		width: 100%;
+		background: none;
+		border: none;
+		color: var(--text-inverse);
+		align-items: center;
+		font-size: var(--s-font-size--paragraph);
+		line-height: var(--s-line-height--paragraph);
+	}
+
+	li button:hover {
+		text-decoration-line: underline;
+		text-decoration-style: dashed;
+	}
+
+	li button::after {
+		margin-left: auto;
+		content: "";
+		width: 0.5rem;
+		height: 0.5rem;
+		border-right: 2px solid var(--text-inverse);
+		border-bottom: 2px solid var(--text-inverse);
+		rotate: -45deg;
+	}
+  }
 }
 
 header:has(#explore-button).active nav[aria-label^="sub"] {
@@ -63,7 +101,11 @@ header:has(#explore-button).active nav[aria-label^="sub"] {
 	width: fit-content;
 	height: 100dvh;
 	background-color: var(--background-inverse);
+	transition: 400ms;
+}
 
+header:has(#explore-button) nav[aria-label^="sub"].open  {
+	transform: translateX(-100vw);
 }
 
 /*

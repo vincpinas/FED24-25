@@ -229,7 +229,7 @@
   Nb. Vermeld de bronnen ook in je code.
 
   1. [aria-label & aria-labelledby info](https://stackoverflow.com/questions/26032089/in-html-how-can-i-have-text-that-is-only-accessible-for-screen-readers-i-e-fo)
-  2. bron 2
+  2. [CSS Scroll animatie](https://scroll-driven-animations.style/demos/reverse-scroll/css/)
   3. ...
 
 </details>
