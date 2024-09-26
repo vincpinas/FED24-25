@@ -1,258 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Vincent Pinas" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Vincent Pinas" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>NASA</title>
+		<title>NASA</title>
 
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/variables.css" />
+		<link rel="stylesheet" href="styles/base.css" />
+		<link rel="stylesheet" href="styles/animations.css" />
 
-    <link rel="stylesheet" href="styles/components/nav.css" />
+		<link rel="stylesheet" href="styles/components/nav.css" />
 
-    <link rel="stylesheet" href="styles/pages/home.css" />
+		<link rel="stylesheet" href="styles/pages/home.css" />
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-  </head>
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+	</head>
 
-  <body>
-	<!-- Navigation -->
-    <header>
-      <nav>
-        <button type="button" id="explore-button" title="explore">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <img src="images/favicon.svg" alt="Nasa logo" />
-        <button type="button" title="search" role="search"><img src="images/search.svg" alt="search"></button>
-      </nav>
-      <nav aria-label="submenu">
-        <section>
-          <ul>
-            <li><button data-key="home">Home</button></li>
-            <li><button data-key="missions">Missions</button></li>
-            <li><button data-key="humans_in_space">Humans in Space</button></li>
-          </ul>
-          <hr>
-          <ul>
-            <li><button data-key="news_and_events">News & Events</button></li>
-            <li><button data-key="multimedia">Multimedia</button></li>
-          </ul>
-          <hr>
-          <ul>
-            <li><button data-key="settings">Settings</button></li>
-          </ul>
-        </section>
-        <section></section>
-      </nav>
-    </header>
+	<body>
+		<a href="#main-content" id="screen-reader-text">Skip to main content</a>
+		<!-- Navigation -->
+		<header>
+			<nav>
+				<button type="button" id="explore-button" title="explore">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<img src="images/favicon.svg" alt="Nasa logo" />
+				<button type="button" title="search">
+					<img src="images/search.svg" alt="search" />
+				</button>
+			</nav>
+			<nav aria-label="submenu">
+				<section>
+          <h2>Menu</h2>
+					<ul>
+						<li><button data-key="home">Home</button></li>
+						<li><button data-key="missions">Missions</button></li>
+						<li><button data-key="humans_in_space">Humans in Space</button></li>
+					</ul>
+					<hr />
+					<ul>
+						<li><button data-key="news_and_events">News & Events</button></li>
+						<li><button data-key="multimedia">Multimedia</button></li>
+					</ul>
+					<hr />
+					<ul>
+						<li><button data-key="settings">Settings</button></li>
+					</ul>
+				</section>
+				<section></section>
+			</nav>
+		</header>
 
-    <main>
-	  <!-- Hero section -->
-      <section>
-        <span>
-          <button type="button">d</button>
-          <button type="button">d</button>
-        </span>
-        <div>
-        <h1>NASA's Europa Clipper</h1>
-        <p>
-          Earth's first mission to conduct detailed reconnaissance of Jupiter's
-          moon, Europa.
-        </p>
-        <a href="#">The Mission</a>
-      </div>
-        <ul>
-          <li>
-            <h3>Nasa Astronaut</h3>
-            <a href="#"
-              >Donald R. Pettit <img src="images/link.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <h3>Space Station Science</h3>
-            <a href="#"
-              >Pettit's Previous Contributions
-              <img src="images/link.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <h3>Humans in Space</h3>
-            <a href="#">Expedition 71 <img src="images/link.svg" alt="" /></a>
-          </li>
-        </ul>
-        <div class="video-wrapper">
-          <div></div>
-          <video
-            alt
-            src="images/plume-flyby.mp4"
-            loop="true"
-            autoplay="true"
-            muted="true"
-          ></video>
-        </div>
-      </section>
+		<main id="main-content">
+			<!-- Hero section -->
+			<section>
+				<span>
+					<button type="button">d</button>
+					<button type="button">d</button>
+				</span>
+				<div>
+					<h1>NASA's Europa Clipper</h1>
+					<p>
+						Earth's first mission to conduct detailed reconnaissance of
+						Jupiter's moon, Europa.
+					</p>
+					<a href="#">The Mission</a>
+				</div>
+				<ul>
+					<li>
+						<h3>Nasa Astronaut</h3>
+						<a href="#"
+							>Donald R. Pettit <img src="images/link.svg" alt=""
+						/></a>
+					</li>
+					<li>
+						<h3>Space Station Science</h3>
+						<a href="#"
+							>Pettit's Previous Contributions
+							<img src="images/link.svg" alt=""
+						/></a>
+					</li>
+					<li>
+						<h3>Humans in Space</h3>
+						<a href="#">Expedition 71 <img src="images/link.svg" alt="" /></a>
+					</li>
+				</ul>
+				<div class="video-wrapper">
+					<div></div>
+					<video
+						src="images/plume-flyby.mp4"
+						loop
+						autoplay
+						muted
+					></video>
+				</div>
+			</section>
 
-	  <!-- Featured news section -->
-      <section aria-labelledby="featured-news-heading">
-        <div>
-          <h2 id="featured-news-heading">Featured News</h2>
-          <h3>
-            <a href="#" aria-label="More NASA News"
-              >More NASA News <img src="images/link.svg" alt=""
-            /></a>
-          </h3>
-        </div>
-        <div class="featured-news-grid">
+			<!-- Featured news section -->
+			<section aria-labelledby="featured-news-heading">
+				<div>
+					<h2 id="featured-news-heading">Featured News</h2>
+					<h3>
+						<a href="#" aria-label="More NASA News"
+							>More NASA News <img src="images/link.svg" alt=""
+						/></a>
+					</h3>
+				</div>
+				<div class="featured-news-grid">
+					<a href="#">
+						<article class="large-article">
+							<div>
+								<header>
+									<div>
+										<img src="images/news-white.svg" alt="" />
+										<p>NEWS RELEASE</p>
+									</div>
+								</header>
+								<p>2 MIN READ</p>
+								<h4>NASA Astronauts to Discuss Mission from Space Station</h4>
+							</div>
+						</article>
+						<img
+							src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+							alt="NASA Astronauts to Discuss Mission from Space Station"
+						/>
+					</a>
+					<a href="#">
+						<article class="large-article">
+							<div>
+								<header>
+									<div>
+										<img src="images/news-white.svg" alt="" />
+										<p>NEWS RELEASE</p>
+									</div>
+								</header>
+								<p>2 MIN READ</p>
+								<h4>NASA Astronauts to Discuss Mission from Space Station</h4>
+							</div>
+						</article>
+						<img
+							src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+							alt="NASA Astronauts to Discuss Mission from Space Station"
+						/>
+					</a>
+					<a href="#">
+						<article class="large-article">
+							<div>
+								<header>
+									<div>
+										<img src="images/news-white.svg" alt="" />
+										<p>NEWS RELEASE</p>
+									</div>
+								</header>
+								<p>2 MIN READ</p>
+								<h4>NASA Astronauts to Discuss Mission from Space Station</h4>
+							</div>
+						</article>
+						<img
+							src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+							alt="NASA Astronauts to Discuss Mission from Space Station"
+						/>
+					</a>
+					<a href="#">
+						<article class="large-article">
+							<div>
+								<header>
+									<div>
+										<img src="images/news-white.svg" alt="" />
+										<p>NEWS RELEASE</p>
+									</div>
+								</header>
+								<p>2 MIN READ</p>
+								<h4>NASA Astronauts to Discuss Mission from Space Station</h4>
+							</div>
+						</article>
+						<img
+							src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
+							alt="NASA Astronauts to Discuss Mission from Space Station"
+						/>
+					</a>
+				</div>
+			</section>
 
-          <a href="#">
-            <article class="large-article">
-              <div>
-                <header>
-                  <span class="article-meta">
-                    <img src="images/news-white.svg" alt="" />
-                    <p>NEWS RELEASE</p>
-                  </span>
-                </header>
-                <p>2 MIN READ</p>
-                <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
-              </div>
-            </article>
-            <img
-              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
-              alt="NASA Astronauts to Discuss Mission from Space Station"
-            />
-          </a>
-          <a href="#">
-            <article class="large-article">
-              <div>
-                <header>
-                  <span class="article-meta">
-                    <img src="images/news-white.svg" alt="" />
-                    <p>NEWS RELEASE</p>
-                  </span>
-                </header>
-                <p>2 MIN READ</p>
-                <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
-              </div>
-            </article>
-            <img
-              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
-              alt="NASA Astronauts to Discuss Mission from Space Station"
-            />
-          </a>
-          <a href="#">
-            <article class="large-article">
-              <div>
-                <header>
-                  <span class="article-meta">
-                    <img src="images/news-white.svg" alt="" />
-                    <p>NEWS RELEASE</p>
-                  </span>
-                </header>
-                <p>2 MIN READ</p>
-                <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
-              </div>
-            </article>
-            <img
-              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
-              alt="NASA Astronauts to Discuss Mission from Space Station"
-            />
-          </a>
-          <a href="#">
-            <article class="large-article">
-              <div>
-                <header>
-                  <span class="article-meta">
-                    <img src="images/news-white.svg" alt="" />
-                    <p>NEWS RELEASE</p>
-                  </span>
-                </header>
-                <p>2 MIN READ</p>
-                <h4>NASA Astronauts to Discuss Mission from Space Station</h4>
-              </div>
-            </article>
-            <img
-              src="images/covers/hubble-olmstedart-dualagns-stsci-01j29xxpbeg2tqnkcnd6d7z4yn.webp"
-              alt="NASA Astronauts to Discuss Mission from Space Station"
-            />
-          </a>
+			<!-- More Images Section -->
+			<section>
+				<h2>More NASA Images</h2>
 
-        </div>
-      </section>
+				<h3>
+					<a href="">Space missions <img src="images/link.svg" alt="" /></a>
+				</h3>
+				<article>
+					<a href="#">
+						<ul>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+						</ul>
+						<h4>Views from the Cupola Gallery</h4>
+						<p>20 Images</p>
+					</a>
+					<a href="#">
+						<ul>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+						</ul>
+						<h4>Views from the Cupola Gallery</h4>
+						<p>20 Images</p>
+					</a>
+					<a href="#">
+						<ul>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+						</ul>
+						<h4>Views from the Cupola Gallery</h4>
+						<p>20 Images</p>
+					</a>
+				</article>
 
-      <!-- More Images Section -->
-       <section>
-        <h2>More NASA Images</h2>
-        
-        <h3><a href="">Space missions <img src="images/link.svg" alt="" /></a></h3>
-        <article>
-          <a href="#">
-            <ul>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-            </ul>
-            <h4>Views from the Cupola Gallery</h4>
-            <p>20 Images</p>
-          </a>
-          <a href="#">
-            <ul>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-            </ul>
-            <h4>Views from the Cupola Gallery</h4>
-            <p>20 Images</p>
-          </a>
-          <a href="#">
-            <ul>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-            </ul>
-            <h4>Views from the Cupola Gallery</h4>
-            <p>20 Images</p>
-          </a>
-        </article>
+				<h3>
+					<a>Our solar system <img src="images/link.svg" alt="" /></a>
+				</h3>
+				<article>
+					<a href="#">
+						<ul>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+						</ul>
+						<h4>Views from the Cupola Gallery</h4>
+						<p>20 Images</p>
+					</a>
+					<a href="#">
+						<ul>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+						</ul>
+						<h4>Views from the Cupola Gallery</h4>
+						<p>20 Images</p>
+					</a>
+					<a href="#">
+						<ul>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+							<li><img src="images/covers/polarisdawn.webp" alt="" /></li>
+						</ul>
+						<h4>Views from the Cupola Gallery</h4>
+						<p>20 Images</p>
+					</a>
+				</article>
+			</section>
+		</main>
 
-        <h3><a>Our solar system <img src="images/link.svg" alt="" /></a></h3>
-        <article>
-          <a href="#">
-            <ul>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-            </ul>
-            <h4>Views from the Cupola Gallery</h4>
-            <p>20 Images</p>
-          </a>
-          <a href="#">
-            <ul>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-            </ul>
-            <h4>Views from the Cupola Gallery</h4>
-            <p>20 Images</p>
-          </a>
-          <a href="#">
-            <ul>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-              <li><img src="images/covers/polarisdawn.webp" alt=""></li>
-            </ul>
-            <h4>Views from the Cupola Gallery</h4>
-            <p>20 Images</p>
-          </a>
-        </article>
-       </section>
-
-    <script src="scripts/main.js" type="module"></script>
-  </body>
+		<script src="scripts/main.js" type="module"></script>
+	</body>
 </html>

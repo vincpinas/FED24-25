@@ -58,6 +58,10 @@ header:has(#explore-button) nav[aria-label^="sub"] {
 		margin: 2rem 0;
 	}
 
+	section h2 {
+		margin-bottom: 2rem;
+	}
+
 	section ul {
 		display: flex;
 		flex-direction: column;
@@ -165,6 +169,10 @@ MENU BUTTON
 		transition: 400ms ease;
 	}
 
+	/*
+	DESKTOP MEDIA QUERY
+	------------------------------------------------------------------
+	*/
 	@media screen and (min-width: 992px) {
 		& {
 			flex-direction: row;

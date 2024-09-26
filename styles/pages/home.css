@@ -75,6 +75,10 @@ main > section:nth-of-type(1) {
 		}
 	}
 
+	/*
+	TABLET MEDIA QUERY
+	------------------------------------------------------------------
+	*/
 	@media screen and (min-width: 786px) {
 		height: calc(100dvh - 6rem);
 
@@ -189,7 +193,7 @@ main > section:nth-of-type(2) {
 		}
 	}
 
-	.article-meta {
+	header div:has(img, p) {
 		display: flex;
 		gap: 0.5rem;
 
@@ -204,7 +208,11 @@ main > section:nth-of-type(2) {
 		gap: 1rem;
 		grid-template-rows: repeat(auto-fill, 25rem);
 	}
-
+	
+	/*
+	DESKTOP MEDIA QUERY
+	------------------------------------------------------------------
+	*/
 	@media screen and (min-width: 992px) {
 		.featured-news-grid {
 			grid-template-columns: repeat(4, 1fr);

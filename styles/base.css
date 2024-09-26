@@ -22,12 +22,30 @@ body {
 		font-family: var(--font-primary);
 	}
 
+	#screen-reader-text {
+		position: absolute;
+		left: -9999px;
+		z-index: 999;
+		padding: 1em;
+		background-color: black;
+		color: white;
+		opacity: 0;
+
+		&:focus {
+			left: 50%;
+			transform: translateX(-50%);
+			opacity: 1;
+		}
+	}
+
 	a,
 	button,
 	input[type="submit"] {
 		text-decoration: none;
 		cursor: pointer;
 		color: var(--text);
+		background: none;
+		border: none;
 	}
 
 	a {
