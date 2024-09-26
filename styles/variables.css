@@ -71,9 +71,25 @@ EXAMPLE MEDIA QUERIES
 ------------------------------------------------------------------
 */
 /* MOBILE: */
-@media screen and (min-width: 786px) {
-}
+/* @media screen and (min-width: 786px) {
+} */
 
 /* DESKTOP: */
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
+} */
+
+@media (prefers-color-scheme: light){
+	:root{
+		--background: oklch(0% 0 0);
+		--background-inverse: oklch(100% 0 0);
+		--text: oklch(100% 0 0);
+		--text-inverse: oklch(0% 0 0);
+		--special: oklch(55.66% 0.21 27.56);
+		--text-label: oklch(0% 0 0 / 0.64);
+		--gray-accent: rgb(128, 128, 128, 0.4);
+	}
 }
+
+/* [data-theme: "dark"] {
+
+} */
