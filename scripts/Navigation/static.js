@@ -37,10 +37,11 @@ export const tab_data = {
 				type: "checkbox",
 				event: {
 					type: "click",
-					callback: (target) => {
-						if(target.checked) document.documentElement.setAttribute("data-theme", "light");
+					callback: (target, firstRun = false) => {
+						if (target.checked)
+							document.documentElement.setAttribute("data-theme", "light");
 						else document.documentElement.setAttribute("data-theme", "dark");
-						updateStorage("settings", "theme", target.checked)
+						if (!firstRun) updateStorage("settings", "theme", target.checked);
 					},
 				},
 			},
@@ -54,13 +55,8 @@ export const tab_data = {
 				type: "checkbox",
 				options: [],
 				event: {
-					type: "click",
-					callback: (target, firstRun = false) => {
-						if(target.checked) document.documentElement.setAttribute("data-theme", "light");
-						else document.documentElement.setAttribute("data-theme", "dark");
-						if(firstRun) return;
-						updateStorage("settings", "theme", target.checked)
-					},
+					type: "change",
+					callback: (target, firstRun = false) => {},
 				},
 			},
 		],
