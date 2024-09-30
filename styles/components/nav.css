@@ -116,6 +116,10 @@ header:has(#explore-button).active nav[aria-label^="sub"] {
 	height: 100dvh;
 	background-color: var(--background-inverse);
 	transition: 400ms;
+
+	@media (prefers-reduced-motion) {
+		transition: none;
+	}
 }
 
 header:has(#explore-button) nav[aria-label^="sub"].open {
