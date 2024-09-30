@@ -22,7 +22,7 @@ body {
 		font-family: var(--font-primary);
 	}
 
-	#screen-reader-text {
+	#skip-to-content {
 		position: absolute;
 		left: -9999px;
 		z-index: 999;

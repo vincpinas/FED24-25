@@ -155,6 +155,16 @@
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  ### Bevindingen screen-reader test
+  - **Probleem:** Als je in het menu tab klikt dan gaat hij verder in de body daarna en kan je het menu niet meer uit
+  **Oplossing:** Als het menu actief is de body niet meer focusable maken to het menu niet meer actief is. ```body:has(header.active) main {
+	display: none;
+}```
+
+
+  ### Bevindingen WCAG Test
+  - 
+
 </details>
 
 
@@ -183,10 +193,9 @@
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Readme verbeteren
+  - Beoordelings formulier bekijken
+  - Clamp bekijken voor font size responsiveness
 
 </details>
 
@@ -230,6 +239,6 @@
 
   1. [aria-label & aria-labelledby info](https://stackoverflow.com/questions/26032089/in-html-how-can-i-have-text-that-is-only-accessible-for-screen-readers-i-e-fo)
   2. [CSS Scroll animatie](https://scroll-driven-animations.style/demos/reverse-scroll/css/)
-  3. ...
+  3. [Theme switcher voorbeeld](https://codepen.io/saadeghi/pen/OJypbNM)
 
 </details>

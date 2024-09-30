@@ -78,6 +78,8 @@ EXAMPLE MEDIA QUERIES
 /* @media screen and (min-width: 992px) {
 } */
 
+
+/* BRON (Zie README): Theme Switcher voorbeeld */
 @media (prefers-color-scheme: light){
 	:root{
 		--background: oklch(0% 0 0);
@@ -86,10 +88,26 @@ EXAMPLE MEDIA QUERIES
 		--text-inverse: oklch(0% 0 0);
 		--special: oklch(55.66% 0.21 27.56);
 		--text-label: oklch(0% 0 0 / 0.64);
-		--gray-accent: rgb(128, 128, 128, 0.4);
+		--gray-accent: rgba(160, 160, 160, 0.4);
 	}
 }
 
-/* [data-theme: "dark"] {
+[data-theme= "dark"] {
+	--background: oklch(100% 0 0);
+	--background-inverse: oklch(0% 0 0);
+	--text: oklch(0% 0 0);
+	--text-inverse: oklch(100% 0 0);
+	--special: oklch(55.66% 0.21 27.56);
+	--text-label: oklch(0% 0 0 / 0.64);
+	--gray-accent: rgb(128, 128, 128, 0.4);
+}
 
-} */
+[data-theme= "light"] {
+	--background: oklch(0% 0 0);
+	--background-inverse: oklch(100% 0 0);
+	--text: oklch(100% 0 0);
+	--text-inverse: oklch(0% 0 0);
+	--special: oklch(55.66% 0.21 27.56);
+	--text-label: oklch(0% 0 0 / 0.64);
+	--gray-accent: rgba(160, 160, 160, 0.4);
+}
