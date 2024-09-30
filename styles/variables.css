@@ -15,7 +15,7 @@ COLORS
 FONTS
 ------------------------------------------------------------------
 */
-	--font-primary: "Public Sans";
+	--font-primary: "Inter";
 	--font-secondary: "DM Mono";
 
 	/*
@@ -78,10 +78,9 @@ EXAMPLE MEDIA QUERIES
 /* @media screen and (min-width: 992px) {
 } */
 
-
 /* BRON (Zie README): Theme Switcher voorbeeld */
-@media (prefers-color-scheme: light){
-	:root{
+@media (prefers-color-scheme: light) {
+	:root {
 		--background: oklch(0% 0 0);
 		--background-inverse: oklch(100% 0 0);
 		--text: oklch(100% 0 0);
@@ -92,7 +91,7 @@ EXAMPLE MEDIA QUERIES
 	}
 }
 
-[data-theme= "dark"] {
+[data-theme="dark"] {
 	--background: oklch(100% 0 0);
 	--background-inverse: oklch(0% 0 0);
 	--text: oklch(0% 0 0);
@@ -102,7 +101,7 @@ EXAMPLE MEDIA QUERIES
 	--gray-accent: rgb(128, 128, 128, 0.4);
 }
 
-[data-theme= "light"] {
+[data-theme="light"] {
 	--background: oklch(0% 0 0);
 	--background-inverse: oklch(100% 0 0);
 	--text: oklch(100% 0 0);

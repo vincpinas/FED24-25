@@ -11,6 +11,6 @@ export default {
 		"header:has(#explore-button) nav[aria-label^='sub'] section:nth-of-type(2)"
 	),
 	skip_content: document.querySelector("#skip-to-content"),
-	pause: document.querySelector("button[title='pause']"),
+	pause: document.querySelector("button[title='pause background video']"),
 	video: document.querySelector("video"),
 };

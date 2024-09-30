@@ -1,4 +1,4 @@
-import { updateStorage } from "../helpers.js";
+import { create_el, get_css_variable, update_storage } from "../helpers.js";
 
 export const tab_data = {
 	missions: {},
@@ -10,7 +10,8 @@ export const tab_data = {
 		elements: [
 			{
 				tag: "label",
-				html: "Font Size",
+				innerHTML: "Font Size",
+				for: "fontsize"
 			},
 			{
 				tag: "input",
@@ -23,13 +24,15 @@ export const tab_data = {
 					type: "change",
 					callback: (target) => {
 						document.documentElement.style.fontSize = `${target.value}px`;
-						updateStorage("settings", "fontsize", target.value);
+						update_storage("settings", "fontsize", target.value);
 					},
 				},
+				state: { property: "value", id: "fontsize" }
 			},
 			{
 				tag: "label",
-				html: "Theme",
+				innerHTML: "Theme",
+				for: "theme"
 			},
 			{
 				tag: "input",
@@ -41,23 +44,38 @@ export const tab_data = {
 						if (target.checked)
 							document.documentElement.setAttribute("data-theme", "light");
 						else document.documentElement.setAttribute("data-theme", "dark");
-						if (!firstRun) updateStorage("settings", "theme", target.checked);
+						if (!firstRun) update_storage("settings", "theme", target.checked);
 					},
 				},
+				state: { property: "checked", id: "theme" }
 			},
 			{
 				tag: "label",
-				html: "Font",
+				innerHTML: "Font",
+				for: "font"
 			},
 			{
 				tag: "select",
-				id: "theme",
+				id: "font",
 				type: "checkbox",
-				options: [],
+				children: [
+					create_el("option", {
+						innerHTML: "Default",
+						value: "Inter",
+					}),
+					create_el("option", {
+						innerHTML: "Dyslexic",
+						value: "Dyslexic",
+					}),
+				],
 				event: {
 					type: "change",
-					callback: (target, firstRun = false) => {},
+					callback: (target, firstRun = false) => {
+						document.documentElement.style.setProperty("--font-primary", target.value);
+						if (!firstRun) update_storage("settings", "font", target.value);
+					},
 				},
+				state: { property: "value", id: "font" },
 			},
 		],
 	},

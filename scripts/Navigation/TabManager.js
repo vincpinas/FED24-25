@@ -1,46 +1,53 @@
 import html from "../selectors.js";
-import { createEl, getStorage } from "../helpers.js";
+import { create_el, get_storage } from "../helpers.js";
 import { tab_data } from "./static.js";
 
 class TabManager {
 	constructor(container) {
 		this.container = container;
 		this.tabs = tab_data;
-		this.state = getStorage("settings");
-
-
+		this.state = get_storage("settings");
 	}
 
 	// Functions
 	// ------------------------------------------------------------------
 	open(target) {
-		this.state = getStorage("settings");
+		this.clear();
+
+		this.state = get_storage("settings");
 
 		html.menu.classList.add("open");
 
-		const data = this.tabs[target.dataset.key];;
+		const data = this.tabs[target.dataset.key];
 
-		createEl("h2", { parent: this.container, html: data.title})
-		createEl("button", {
+		create_el("h2", { parent: this.container, innerHTML: data.title });
+		create_el("button", {
 			parent: this.container,
-			html: "Back",
+			innerHTML: "Back",
 		}).addEventListener("click", () => this.close());
-		createEl("hr", { parent: this.container });
+		create_el("hr", { parent: this.container });
 
-		data.elements.forEach(element => {
-			const el = createEl(element.tag, { 
-				html: element.html || "",
+		data.elements.forEach((element) => {
+			const el = create_el(element.tag, {
+				innerHTML: element.innerHTML,
 				parent: element.parent || this.container,
-				type: element.type || null,
-				event: element.event || null,
-				value: this.state[element.id] || element.value || null,
-				min: element.min || null,
-				max: element.max || null,
-				checked: this.state[element.id] || null,
-			})
+				type: element.type,
+				event: element.event,
+				value: element.value,
+				min: element.min,
+				max: element.max,
+				children: element.children,
+				state: element.state,
+				id: element.id,
+				for: element.for
+			});
+
+			if (element.state) {
+				el[element.state.property] = this.state[element.state.id];
+			}
 
 			element && element.event ? element.event.callback(el, true) : null;
-		})
+		});
 	}
 
 	clear() {

@@ -1,4 +1,4 @@
-export const getStorage = (name) => {
+export const get_storage = (name) => {
 	if (localStorage.getItem(name)) return JSON.parse(localStorage.getItem(name));
 	else {
 		localStorage.setItem(name, JSON.stringify({}));
@@ -6,7 +6,7 @@ export const getStorage = (name) => {
 	}
 };
 
-export const updateStorage = (name, key, value) => {
+export const update_storage = (name, key, value) => {
 	let storage = JSON.parse(localStorage.getItem(name));
 
 	storage[key] = value;
@@ -14,11 +14,14 @@ export const updateStorage = (name, key, value) => {
 	localStorage.setItem(name, JSON.stringify(storage));
 };
 
-export const createEl = (tag, options = {}) => {
+export const create_el = (tag, options = {}) => {
 	const element = document.createElement(tag);
 
-	if (options.html) element.innerHTML = options.html;
+	if (options.innerHTML) element.innerHTML = options.innerHTML;
 	if (options.parent) options.parent.appendChild(element);
+	if (options.children) {
+		options.children.forEach((child) => element.appendChild(child));
+	}
 
 	if (options.id) element.id = options.id;
 	if (options.class) element.classList.add(options.class);
@@ -32,7 +35,12 @@ export const createEl = (tag, options = {}) => {
 	if (options.value) element.setAttribute("value", options.value);
 	if (options.min) element.setAttribute("min", options.min);
 	if (options.max) element.setAttribute("max", options.max);
-	if (options.checked) element.setAttribute("checked", options.checked)
+	if (options.checked) element.setAttribute("checked", options.checked);
+	if (options.for) element.setAttribute("for", options.for)
 
 	return element;
 };
+
+export const get_css_variable = (property) => {
+	return getComputedStyle(document.documentElement).getPropertyValue(property).replace(/"/g, "");
+}
