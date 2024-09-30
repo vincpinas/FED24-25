@@ -55,9 +55,10 @@ export const tab_data = {
 				options: [],
 				event: {
 					type: "click",
-					callback: (target) => {
+					callback: (target, firstRun = false) => {
 						if(target.checked) document.documentElement.setAttribute("data-theme", "light");
 						else document.documentElement.setAttribute("data-theme", "dark");
+						if(firstRun) return;
 						updateStorage("settings", "theme", target.checked)
 					},
 				},

@@ -39,7 +39,7 @@ class TabManager {
 				checked: this.state[element.id] || null,
 			})
 
-			element && element.event ? element.event.callback(el) : null;
+			element && element.event ? element.event.callback(el, true) : null;
 		})
 	}
 
