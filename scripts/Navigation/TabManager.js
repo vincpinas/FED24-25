@@ -67,6 +67,10 @@ class TabManager {
 				id: element.id,
 				for: element.for,
 			});
+
+			if (element.state) {
+				el[element.state.property] = this.state[element.state.id];
+			}
 		});
 	}
 

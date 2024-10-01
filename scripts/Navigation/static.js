@@ -22,7 +22,7 @@ export const tab_data = {
 			{
 				tag: "label",
 				innerHTML: "Font Size",
-				for: "fontsize"
+				for: "fontsize",
 			},
 			{
 				tag: "input",
@@ -38,38 +38,53 @@ export const tab_data = {
 						update_storage("settings", "fontsize", target.value);
 					},
 				},
-				state: { property: "value", id: "fontsize" }
+				state: { property: "value", id: "fontsize" },
 			},
 			{
 				tag: "label",
 				innerHTML: "Theme",
-				for: "theme"
+				for: "theme",
 			},
 			{
-				tag: "input",
+				tag: "select",
 				id: "theme",
-				type: "checkbox",
+				children: [
+					create_el("option", {
+						innerHTML: "Dark",
+						value: "dark",
+					}),
+					create_el("option", {
+						innerHTML: "Light",
+						value: "light",
+					}),
+					create_el("option", {
+						innerHTML: "High Contrast",
+						value: "contrast",
+					}),
+				],
 				event: {
-					type: "click",
+					type: "change",
 					// BRON (Zie README): Theme Switcher voorbeeld
 					callback: (target, no_save = false) => {
-						if (target.checked)
+						if (target.value === "light")
 							document.documentElement.setAttribute("data-theme", "light");
-						else document.documentElement.setAttribute("data-theme", "dark");
-						if (!no_save) update_storage("settings", "theme", target.checked);
+						else if (target.value === "dark")
+							document.documentElement.setAttribute("data-theme", "dark");
+						else if (target.value === "contrast")
+							document.documentElement.setAttribute("data-theme", "contrast");
+						if (!no_save) update_storage("settings", "theme", target.value);
 					},
 				},
-				state: { property: "checked", id: "theme" }
+				state: { property: "value", id: "theme" },
 			},
 			{
 				tag: "label",
 				innerHTML: "Font",
-				for: "font"
+				for: "font",
 			},
 			{
 				tag: "select",
 				id: "font",
-				type: "checkbox",
 				children: [
 					create_el("option", {
 						innerHTML: "Default",
@@ -83,7 +98,10 @@ export const tab_data = {
 				event: {
 					type: "change",
 					callback: (target, no_save = false) => {
-						document.documentElement.style.setProperty("--font-primary", target.value);
+						document.documentElement.style.setProperty(
+							"--font-primary",
+							target.value
+						);
 						if (!no_save) update_storage("settings", "font", target.value);
 					},
 				},
