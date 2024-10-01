@@ -1,4 +1,4 @@
-import { create_el, get_css_variable, update_storage } from "../helpers.js";
+import { create_el, update_storage } from "../helpers.js";
 
 export const tab_data = {
 	missions: {},
@@ -40,11 +40,12 @@ export const tab_data = {
 				type: "checkbox",
 				event: {
 					type: "click",
-					callback: (target, firstRun = false) => {
+					// BRON (Zie README): Theme Switcher voorbeeld
+					callback: (target, no_save = false) => {
 						if (target.checked)
 							document.documentElement.setAttribute("data-theme", "light");
 						else document.documentElement.setAttribute("data-theme", "dark");
-						if (!firstRun) update_storage("settings", "theme", target.checked);
+						if (!no_save) update_storage("settings", "theme", target.checked);
 					},
 				},
 				state: { property: "checked", id: "theme" }
@@ -70,9 +71,9 @@ export const tab_data = {
 				],
 				event: {
 					type: "change",
-					callback: (target, firstRun = false) => {
+					callback: (target, no_save = false) => {
 						document.documentElement.style.setProperty("--font-primary", target.value);
-						if (!firstRun) update_storage("settings", "font", target.value);
+						if (!no_save) update_storage("settings", "font", target.value);
 					},
 				},
 				state: { property: "value", id: "font" },

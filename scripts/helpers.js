@@ -40,7 +40,3 @@ export const create_el = (tag, options = {}) => {
 
 	return element;
 };
-
-export const get_css_variable = (property) => {
-	return getComputedStyle(document.documentElement).getPropertyValue(property).replace(/"/g, "");
-}

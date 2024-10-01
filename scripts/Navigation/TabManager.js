@@ -9,6 +9,10 @@ class TabManager {
 		this.state = get_storage("settings");
 	}
 
+	init() {
+		
+	}
+
 	// Functions
 	// ------------------------------------------------------------------
 	open(target) {
@@ -46,7 +50,7 @@ class TabManager {
 				el[element.state.property] = this.state[element.state.id];
 			}
 
-			element && element.event ? element.event.callback(el, true) : null;
+			element.event ? element.event.callback(el, true) : null;
 		});
 	}
 
