@@ -1,5 +1,16 @@
 import { create_el, update_storage } from "../helpers.js";
 
+/*
+Een object met tabs en de content die daar in moet voor een dynamisch menu.
+Structuur:
+{
+	tab: {
+		titel: "",
+		elements: []
+	}
+}
+*/
+
 export const tab_data = {
 	missions: {},
 	humans_in_space: {},

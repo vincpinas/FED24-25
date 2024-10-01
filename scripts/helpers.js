@@ -1,3 +1,4 @@
+// Haalt een item uit local storage op en returned een JSON object hiervan.
 export const get_storage = (name) => {
 	if (localStorage.getItem(name)) return JSON.parse(localStorage.getItem(name));
 	else {
@@ -6,6 +7,7 @@ export const get_storage = (name) => {
 	}
 };
 
+// Zet de een JSON object om naar een string en slaat het op in localStorage onder de meegegeven key.
 export const update_storage = (name, key, value) => {
 	let storage = JSON.parse(localStorage.getItem(name));
 
@@ -14,6 +16,7 @@ export const update_storage = (name, key, value) => {
 	localStorage.setItem(name, JSON.stringify(storage));
 };
 
+// Maakt een element net als document.createElement, maar allemaal in 1 functie call. heeft een optie om kinderen toe te voegen via een loop, parent geven in de opties zelf, event etc.
 export const create_el = (tag, options = {}) => {
 	const element = document.createElement(tag);
 
